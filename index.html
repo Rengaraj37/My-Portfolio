@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: lightgray;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: red;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    /*.skills ul {
+      list-style: none;
+      padding-right: 0;
+    }
+
+    .skills li {
+      margin-bottom: 5px;
+    }*/
+
+    .certificates{
+        
+    }
+    table,tr,td{
+        border: 3px solid black;
+        text-align: center;
+        border-collapse: collapse;
+        padding: 20px;
+        background-color: tan;
+    }
+
+    .gap{
+        color: lightgrey;
+    }
+    .projects {
+      margin-top: 20px;
+    }
+
+    .projects .project {
+      margin-bottom: 20px;
+    }
+
+    .projects .project h3 {
+      margin-bottom: 5px;
+      color: blue;
+    }
+
+    .projects .project p {
+      margin-bottom: 10px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Portfolio</h1>
+
+  <div class="profile">
+    <img src="myimg.jpg" alt="Profile Picture">
+    <div>
+      <h2>RENGARAJ M</h2>
+      <p>Electrical and Electronics Engineering Student</p>
+    </div>
+  </div>
+
+  <h2>About Me</h2>
+  <p><span class="gap">__________</span> I am a passionate Electrical student with a keen interest in web development. I enjoy coding and constantly strive to improve my skills. I am a quick learner and always up for new challenges.</p>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>SQL</li>
+        <li>C</li>
+        <li>Java</li>
+    </ul>
+  </div>
+
+  <div class="certificates">
+    <h2>Certificates</h2>
+    <ul>
+        <a href="https://drive.google.com/file/d/1rd6HxvbXBD6H7KEqORQustIhZVoUdlLi/view" target="_blank"><li> Mastering Data Structures & Alogrithms using C and C++ </li></a><br>
+        <a href="https://drive.google.com/file/d/16UgCL6znQrVPKp-E_YUePiX38cAqAhye/view" target="_blank"><li>Java Programming</li></a><br>
+        <a href="https://drive.google.com/file/d/16UgCL6znQrVPKp-E_YUePiX38cAqAhye/view" target="_blaank"><li>Java for Beginners - Learn all the basics of Java</li></a>
+    </ul>
+</div>
+
+  <h2>Education</h2>
+  <ul>
+    <li><b>10th Std </b>-> Dr.RKV Matriculation Higher Secondary School, Sattur</li>
+    <li><b>12th Std</b> -> Dr.RKV Matriculation Higher Secondary School, Sattur</li>
+    <li><b>B.E-EEE</b> -> Sri Eshwar College of Engineering, Coimbatore</li>
+  </ul>
+
+  <h2>Qualification</h2>
+  <table>
+    <tr>
+      <th>10th</th>
+      <td>88%</td>
+      <td>440 out of 500</td>
+    </tr>
+    <tr>
+      <th>12th</th>
+      <td>88.66%</td>
+      <td>532 out 600</td>
+    </tr>
+    <tr>
+      <th>B.E-EEE</th>
+      <td>SGPA:8<br>(4th sem)</td>
+      <td>CGPA:8.1</td>
+    </tr>
+  </table>
+
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3><span class="gap">___</span>1. Intelligent Water Management System</h3>
+      <p><span class="gap">_____________</span>Water management is very important in order to save water efficiently.</p>
+    </div>
+    <div class="project">
+      <h3><span class="gap">___</span>2. E-commerce Web Application</h3>
+      <p><span class="gap">______________</span>Developed a fully functional e-commerce web application using HTML, CSS, JavaScript. Making a Online Food Online Delivery website.</p>
+    </div>
+  </div>
+
+  <h2>Area Of Interest</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Internet Of Things</li>
+  </ul>
+
+  <h2>Known Language</h2>
+  <ul>
+    <li>English</li>
+    <li>Tamil</li>
+  </ul>
+
+  <h2>Hobbies</h2>
+  <ul>
+    <li>Listening Music</li>
+    <li>Playing Games</li>
+    <li>Learning interesting things</li>
+  </ul>
+
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message">
+  </form>
+</body>
+</html>
+ 
