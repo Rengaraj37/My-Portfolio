@@ -1,205 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: lightgray;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rengaraj Portfolio website</title>
 
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
-    }
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    h2 {
-      margin-bottom: 10px;
-      color: red;
-    }
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
 
-    p {
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-
-    .profile {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-
-    /*.skills ul {
-      list-style: none;
-      padding-right: 0;
-    }
-
-    .skills li {
-      margin-bottom: 5px;
-    }*/
-
-    .certificates{
-        
-    }
-    table,tr,td{
-        border: 3px solid black;
-        text-align: center;
-        border-collapse: collapse;
-        padding: 20px;
-        background-color: tan;
-    }
-
-    .gap{
-        color: lightgrey;
-    }
-    .projects {
-      margin-top: 20px;
-    }
-
-    .projects .project {
-      margin-bottom: 20px;
-    }
-
-    .projects .project h3 {
-      margin-bottom: 5px;
-      color: blue;
-    }
-
-    .projects .project p {
-      margin-bottom: 10px;
-    }
-
-    .contact-form input[type="text"],
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    .contact-form input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-
-    .contact-form input[type="submit"]:hover {
-      background-color: #555;
-    }
-  </style>
 </head>
 <body>
-  <h1>Student Portfolio</h1>
+    
+<!-- header section starts  -->
 
-  <div class="profile">
-    <img src="myimg.jpg" alt="Profile Picture">
+<header class="header">
+
+    <div class="user">
+        <!-- <img src="My passport photo.jpg" alt=""> -->
+        <div>
+            <h3>Rengaraj M</h3>
+            <p>Web developer</p>
+        </div>
+        
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">skills</a>
+        <a href="#portfolio">project</a>
+        <a href="#contact">contact</a>
+    </nav>
+
     <div>
-      <h2>RENGARAJ M</h2>
-      <p>Electrical and Electronics Engineering Student</p>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- theme toggler  -->
+
+    <div id="theme-toggler" class="fas fa-moon"></div>
     </div>
-  </div>
 
-  <h2>About Me</h2>
-  <p><span class="gap">__________</span> I am a passionate Electrical student with a keen interest in web development. I enjoy coding and constantly strive to improve my skills. I am a quick learner and always up for new challenges.</p>
+</header>
 
-  <h2>Skills</h2>
-  <div class="skills">
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>SQL</li>
-        <li>C</li>
-        <li>Java</li>
-    </ul>
-  </div>
+<!-- header section ends -->
 
-  <div class="certificates">
-    <h2>Certificates</h2>
-    <ul>
-        <a href="https://drive.google.com/file/d/1rd6HxvbXBD6H7KEqORQustIhZVoUdlLi/view" target="_blank"><li> Mastering Data Structures & Alogrithms using C and C++ </li></a><br>
-        <a href="https://drive.google.com/file/d/16UgCL6znQrVPKp-E_YUePiX38cAqAhye/view" target="_blank"><li>Java Programming</li></a><br>
-        <a href="https://drive.google.com/file/d/16UgCL6znQrVPKp-E_YUePiX38cAqAhye/view" target="_blaank"><li>Java for Beginners - Learn all the basics of Java</li></a>
-    </ul>
-</div>
 
-  <h2>Education</h2>
-  <ul>
-    <li><b>10th Std </b>-> Dr.RKV Matriculation Higher Secondary School, Sattur</li>
-    <li><b>12th Std</b> -> Dr.RKV Matriculation Higher Secondary School, Sattur</li>
-    <li><b>B.E-EEE</b> -> Sri Eshwar College of Engineering, Coimbatore</li>
-  </ul>
 
-  <h2>Qualification</h2>
-  <table>
-    <tr>
-      <th>10th</th>
-      <td>88%</td>
-      <td>440 out of 500</td>
-    </tr>
-    <tr>
-      <th>12th</th>
-      <td>88.66%</td>
-      <td>532 out 600</td>
-    </tr>
-    <tr>
-      <th>B.E-EEE</th>
-      <td>SGPA:8<br>(4th sem)</td>
-      <td>CGPA:8.1</td>
-    </tr>
-  </table>
+<!-- home section starts  -->
 
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="project">
-      <h3><span class="gap">___</span>1. Intelligent Water Management System</h3>
-      <p><span class="gap">_____________</span>Water management is very important in order to save water efficiently.</p>
+<section class="home" id="home">
+
+    <div class="homeleft">
+        <img src="images/My image.jpg" alt="">
     </div>
-    <div class="project">
-      <h3><span class="gap">___</span>2. E-commerce Web Application</h3>
-      <p><span class="gap">______________</span>Developed a fully functional e-commerce web application using HTML, CSS, JavaScript. Making a Online Food Online Delivery website.</p>
+    <div class="homeright">
+        <div class="content">
+            <h3>Rengaraj</h3>
+            <p>i am a web developer</p>
+            <a href="#" class="btn">download CV</a>
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
     </div>
-  </div>
 
-  <h2>Area Of Interest</h2>
-  <ul>
-    <li>Web Development</li>
-    <li>Internet Of Things</li>
-  </ul>
+    
 
-  <h2>Known Language</h2>
-  <ul>
-    <li>English</li>
-    <li>Tamil</li>
-  </ul>
+</section>
 
-  <h2>Hobbies</h2>
-  <ul>
-    <li>Listening Music</li>
-    <li>Playing Games</li>
-    <li>Learning interesting things</li>
-  </ul>
+<!-- home section ends -->
 
-  <h2>Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name">
-    <input type="text" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-    <input type="submit" value="Send Message">
-  </form>
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+
+       <!-- <div class="box-container">
+            <div class="box">
+                <h3>2+</h3>
+                <p>years of experience</p>
+            </div>
+            <div class="box">
+                <h3>450+</h3>
+                <p>satisfied clients</p>
+            </div>
+            <div class="box">
+                <h3>190+</h3>
+                <p>working hours</p>
+            </div>
+            <div class="box">
+                <h3>10+</h3>
+                <p>awards won</p>
+            </div>
+        </div>-->
+
+        <div class="content">
+            <h3>my name is <span>Rengaraj</span></h3>
+            <p>Detail-oriented and ambitious engineering student with a passion for obtaining  accurate results and working on a team. Seeking an entry level position in the engineering industry to pursue a career as a Software Developer and improve my skill set. Ability to work independently and collaborate effectively with a team. </p>
+            <a href="#" class="btn">contact me</a>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="progress">
+            <h3> web design <span>100%</span> </h3>
+            <div class="bar bar-1-1"><span></span></div>
+            <!--<h3> graphic design <span>75%</span> </h3>
+            <div class="bar bar-1-2"><span></span></div>-->
+            <h3> UI/UX design <span>80%</span> </h3>
+            <div class="bar bar-1-3"><span></span></div>
+        </div>
+
+        <div class="progress">
+            <h3> HTML <span>95%</span> </h3>
+            <div class="bar bar-2-1"><span></span></div>
+            <h3> CSS <span>90%</span> </h3>
+            <div class="bar bar-2-2"><span></span></div>
+            <h3> javascript <span>80%</span> </h3>
+            <div class="bar bar-2-3"><span></span></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> my <span>skills</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>languages</h3>
+            <p>JAVA<br>C<br>C++</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>web technology</h3>
+            <p>HTML <br> CSS <br> JAVASCRIPT <br> MERN Stack</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>core concept</h3>
+            <p>DSA <br> DBMS <br> OOPS</p>
+        </div>
+
+        <!--<div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>digital marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>-->
+
+        <div class="box">
+            <i class="fas fa-search-dollar"></i>
+            <h3>other tools</h3>
+            <p>Visual Studio Code <br> MongoDB Compass <br> Github</p>
+        </div>
+
+        <!--<div class="box">
+            <i class="fab fa-wordpress"></i>
+            <h3>wordpress</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus, laboriosam nulla dolore in.</p>
+        </div>-->
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> my <span>projects</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Food logo.png" alt="project-1"> 
+            <div class="content">
+                <h3 style="font-size: 16px;">The Food Ordering Website is a dynamic and user-friendly platform designed to simplify the
+                    process of ordering food online. This project showcases my proficiency in HTML, CSS,and 
+                    JavaScript, demonstrating my ability to create an engaging and interactive user experience</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/water drop.jpg" alt="project-2" style="display: flex; object-fit: cover; object-position: center;">
+            <div class="content">
+            <h3 style="font-size: 16px;">Developing an intelligent wireless water conservation system utilizing NodeMCU boards,
+                ultrasonic sensors, and a motorized water pump to monitor and manage water levels remotely for efficient conservation.
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-3.jpg" alt="">
+            <div class="content">
+                <h3>project 03</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-4.jpg" alt="">
+            <div class="content">
+                <h3>project 04</h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/img-5.jpg" alt="">
+            <div class="content">
+                <h3>project 05</h3>
+            </div>
+        </div>
+
+        <div class="box"> -->
+            <img src="image/img-6.jpg" alt="">
+            <div class="content">
+                <h3>project 06</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> me </h1>
+
+    <form action="">
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <!-- <input type="text" placeholder="subject" class="box"> -->
+        <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="credits"> copyright ©<span> rengaraj </span> | all rights reserved </div>
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
 </body>
 </html>
- 
